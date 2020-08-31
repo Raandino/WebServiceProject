@@ -28,5 +28,7 @@ namespace WebServiceProject.Models
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductCategory> ProductCategories { get; set; }
         public virtual DbSet<ProductInfo> ProductInfoes { get; set; }
+        public object Customer { get; internal set; }
+        public object CustomerAddress { get; internal set; }
     }
 }
