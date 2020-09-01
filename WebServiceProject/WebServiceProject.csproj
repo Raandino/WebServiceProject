@@ -123,9 +123,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\BundleConfig2.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
+    <Compile Include="Models\SalesCLS.cs" />
     <Compile Include="Models\ClienteCLS.cs" />
     <Compile Include="Models\Customer.cs">
       <DependentUpon>ModelCliente.tt</DependentUpon>
@@ -256,9 +259,11 @@
     <Content Include="Views\Product\InfoProduct.cshtml" />
     <Content Include="Views\View.cshtml" />
     <Content Include="Views\Cliente\InfoCliente.cshtml" />
+    <Content Include="Views\Sales\GetAll.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
