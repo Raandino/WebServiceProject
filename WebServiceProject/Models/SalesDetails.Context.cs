@@ -13,10 +13,10 @@ namespace WebServiceProject.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AdventureWorksLT2019Entities1 : DbContext
+    public partial class AdventureWorksLT2019Entities3 : DbContext
     {
-        public AdventureWorksLT2019Entities1()
-            : base("name=AdventureWorksLT2019Entities1")
+        public AdventureWorksLT2019Entities3()
+            : base("name=AdventureWorksLT2019Entities3")
         {
         }
     
@@ -26,7 +26,6 @@ namespace WebServiceProject.Models
         }
     
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<ProductCategory> ProductCategories { get; set; }
         public virtual DbSet<SalesOrderDetail> SalesOrderDetails { get; set; }
         public virtual DbSet<SalesOrderHeader> SalesOrderHeaders { get; set; }
     }
